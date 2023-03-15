@@ -18,10 +18,10 @@ const SongDetails = () => {
         dispatch(playPause(false));
       };
     
-      const handlePlayClick = (song, i) => {
-        dispatch(setActiveSong({ song, data, i }));
-        dispatch(playPause(true));
-      };
+    const handlePlayClick = (song, i) => {
+      dispatch(setActiveSong({ song, data, i }));
+      dispatch(playPause(true));
+    };
 
     if(isFetchingSongDetails || isFetchingRelatedSongs) return <Loader title='Searching song details' />;
 
